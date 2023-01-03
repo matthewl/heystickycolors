@@ -1,0 +1,20 @@
+<div class="flex flex-col space-y-16">
+  <div class="flex flex-col space-y-4">
+    <h1 class="text-4xl font-bold">Stickies</h1>
+    <p class="text-lg font-light">
+      Just a small Rails app, to see if we can some add some colour behaviour to stickies.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-3 gap-12">
+    <% @stickies.each do |sticky| %>
+      <div class="h-64 p-6 bg-yellow-100 shadow-lg">
+        <div class="h-12">
+        </div>
+        <div class="text-lg font-medium">
+          <p><%= sticky.message %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
