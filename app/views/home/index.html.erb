@@ -9,11 +9,10 @@
   <div class="grid grid-cols-3 gap-12">
     <% @stickies.each do |sticky| %>
       <div data-controller="sticky">
-        <div class="h-64 p-6 bg-yellow-100 shadow-lg" data-sticky-target="output">
-          <div class="h-12">
-            <button data-action="click->sticky#change_color">
-              Change color
-            </button>
+        <div class="h-64 p-6 bg-yellow-100 shadow-lg" data-sticky-target="background">
+          <div class="flex justify-end h-12">
+            <div data-action="click->sticky#change_color" class="w-5 h-5 bg-red-300 border-2 border-gray-700 rounded-full" data-sticky-target="selector">
+            </div>
           </div>
           <div class="text-lg font-medium">
             <p><%= sticky.message %></p>
