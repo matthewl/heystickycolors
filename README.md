@@ -1,24 +1,11 @@
-# README
+# Sticky colors
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As an exercise for seeing how rusty my Stimulus knowledge is. Hey's sticky notes on your inbox is nice, but I wanted to see what we could do to add some color options to those stickies.
 
-Things you may want to cover:
+## Getting up and running
 
-* Ruby version
+Run `rails app:create_stickies` to create some stickies.
 
-* System dependencies
+Run `bin/dev` to start the app.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The app will fetch the stickies from the database and allow you to change the colour of the stickies with the color selector at the top right of each sticky.
